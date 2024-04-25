@@ -3,13 +3,14 @@ package model;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class CalendrierAnnuelTest {
 	static CalendrierAnnuel calendrier;
 	
-	@BeforeAll
-	static void setUpBeforeClass() {
+	@BeforeEach
+	public void setUpBeforeClass() {
 		calendrier = new CalendrierAnnuel();
 	}
 
